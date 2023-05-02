@@ -1,0 +1,32 @@
+public interface WWW {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Random rd = new Random();
+		
+		int ran = rd.nextInt(49)+1;
+		int 횟수 = 0;
+		
+		System.out.println("맞춰볼래");
+		
+		while(true) {
+	
+		
+		int 입력 = sc.nextInt();
+		횟수++;
+		
+		if(ran<입력) {//큰지
+			System.out.println("down");
+			
+		} else if(ran>입력) {//작은지
+			System.out.println("up");
+		} else if(ran==입력){//굿
+			System.out.println("good"+횟수+"번 입력 했네");
+			break;
+		}else {
+			System.out.println("숫자만 입력");
+		}
+			
+		}
+		
+	}
+}
