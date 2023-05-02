@@ -1,0 +1,22 @@
+public class ALAY {
+	public static void main(String[] args) {
+		
+
+		int[]배열 = new int[5];
+				
+		Scanner sc = new Scanner(System.in);
+		
+		int i = 0;
+		while(i<5) {
+			System.out.print("배열 값을 입력");
+			배열[i] = sc.nextInt();
+			i++;
+		}
+		
+		for(int a=0; a<5; a++) {
+			System.out.println(배열[a]);
+		}
+		
+
+	}
+}
