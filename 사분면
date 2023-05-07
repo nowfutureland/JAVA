@@ -1,0 +1,29 @@
+package 김민경;
+
+import java.util.Scanner;
+
+public class 김태호 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자1 입력");
+		int a = sc.nextInt();
+		System.out.println("숫자2 입력");
+		int b = sc.nextInt();
+		
+		if(a>0) {
+			if(b>0) {
+				System.out.println("제1사분면");
+			}else {
+				System.out.println("제4사분면");
+			}
+		}else if(a<0) {
+			if(b<0) {
+				System.out.println("제3사분면");
+			}else {
+				System.out.println("제2사분면");
+			}
+		} 
+	}
+
+}
