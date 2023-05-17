@@ -1,0 +1,27 @@
+package kk;
+
+import java.util.Scanner;
+
+public class 자바방과후 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("숫자 입력");
+		int a = sc.nextInt();
+		int R = 0;
+		
+		for(int i=1; i<=a; i++ ) {
+			if(i%2==0) {
+				R = R+i;
+			}
+		}
+			System.out.println(R);
+		
+		
+		
+    
+    }
+
+}
+
