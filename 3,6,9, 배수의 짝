@@ -1,0 +1,36 @@
+package kk;
+
+import java.util.Scanner;
+
+public class 자바방과후 {
+	public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int num;
+        int 박수=0;
+        int a = sc.nextInt();
+        // 1~40까지 진행한다. for문
+        for(int i=1; i<=a; i++) {
+        	
+        	num = i;
+  
+        while(true) {
+            System.out.println(num);
+            if(num%10==3 || num%10==6 || num%10==9) {
+                System.out.println(num+": 짝");
+                박수++; // 박수 = 박수 + 1
+            }
+            num = num / 10;
+            if(num==0) {
+                break;
+            }
+        }
+        // 총 박수 횟수 출력하기
+        System.out.println("1~40까지의 "+ 박수);
+        System.out.printf("1~%d까지의 총 박수: %d", a ,박수);
+        }
+       
+    }
+
+}
+
