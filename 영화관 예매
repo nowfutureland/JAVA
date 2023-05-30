@@ -1,0 +1,29 @@
+package km_0530;
+
+import java.util.Scanner;
+
+public class ygy {
+
+	public static void main(String[] args) {
+			String[][] seat = new String[20][20];
+			
+			System.out.println(seat[0].length);
+			System.out.println(seat.length);
+			
+			for(int i = 0; i<seat.length; i++) {
+				for(int j=0; j<seat[i].length; j++){
+					seat[i][j] = "ㅁ";
+					
+				}
+			}
+			
+			for(int i = 0; i<seat.length; i++) {
+				for(int j=0; j<seat[i].length; j++){
+					System.out.println(seat[i][j]+"\t");
+				}
+				System.out.println();
+			}
+			
+	}
+
+}
