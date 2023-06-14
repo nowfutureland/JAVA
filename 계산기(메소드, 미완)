@@ -1,0 +1,58 @@
+package mk_0614;
+
+import java.util.Scanner;
+
+public class taeho {
+
+	public static void main(String[] args) {
+		
+		// 두 수를 입력 받아서
+		Scanner sc = new Scanner(System.in);
+		int a, b;
+		
+		System.out.print("a?");
+		a = sc.nextInt();
+		System.out.print("b?");
+		b = sc.nextInt();
+		
+		//사칙연사을 선택하게 한다
+		System.out.println(" (1)+ (2)- (3)* (4)/ ");
+		int op = sc.nextInt();
+		double result = 0;
+		
+		//계산 결과를 출력
+		switch(op) {
+		case 1:
+			add(a,b);
+			break;
+		case 2:
+			result = a-b;
+			break;
+		case 3:
+			result = a*b;
+			break;
+		case 4:
+			result = (double)a/b;
+			break;
+			default:
+			System.out.println("오류 다시");
+			
+			
+		}
+		System.out.println("결과: "+result);
+	}
+	
+	void add(int q, int w) {
+		result = a+b;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}
