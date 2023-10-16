@@ -1,0 +1,58 @@
+package kth;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class kmk {
+
+	public static void main(String[] args) {
+		Random rd = new Random();
+		Scanner sc = new Scanner(System.in);
+		String 윷 = "";
+		while(true) {
+			윷 = "";
+			System.out.println("윷 던질래?(1)");
+			
+			if(sc.nextInt() == 1) {
+				for(int i=0; i<4; i++) {
+					윷 = 윷 + rd.nextInt(2);
+					
+				}
+				System.out.println(윷);
+				if(윷.equals("0001")||윷.equals("0010")||윷.equals("0100"));
+				if (윷.equals("0011")||윷.equals("0101")||윷.equals("0010")||윷.equals("0010"));
+				if (윷.equals("0111")||윷.equals("0010")||윷.equals("0010")||윷.equals("0010"));
+				
+						윷출력(윷);
+				
+				
+				    
+						
+				
+				
+			}
+		}
+		
+		
+	}
+
+	private static void 윷출력(String y) {
+		System.out.println(y.charAt(0));
+		System.out.println(y.charAt(1));
+		System.out.println(y.charAt(2));
+		System.out.println(y.charAt(3));
+		
+		for(int i=0; i<y.length(); i++) {
+			if(y.charAt(i) == '0') {
+				// 0일때
+				System.out.println("┌─────────────────────────┐");
+				System.out.println("│    x      x      x      │");
+				System.out.println("└─────────────────────────┘");
+			} else {
+				System.out.println("┌─────────────────────────┐");
+				System.out.println("│    x      x      x      │");
+				System.out.println("└─────────────────────────┘");
+			} 		}
+	}
+
+}
