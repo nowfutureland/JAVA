@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var 태호;
+
+        if (prompt("입력?") == "1") {
+            alert("<h1> 태호</h1>");
+        } else {
+            alert("<h2> 태호</h2>");
+        }
+    </script>
+
+    <script>
+        var a = true;
+        var b = false;
+        var c = 10 > 5;
+        var d = Boolean(null);
+
+        document.write(a, "<br>");
+        document.write(b, "<br>");
+        document.write(c, "<br>");
+        document.write(d, "<br>");
+    </script>
+
+    <script>
+        var num1 = prompt("num1?");
+        var num2 = prompt("num2?");
+        var result;
+
+        result = num1 + num2;
+        document.write(result, "<br>");
+        result = num1 - num2;
+        document.write(result, "<br>");
+        result = num1 * num2;
+        document.write(result, "<br>");
+        result = num1 / num2;
+        document.write(result, "<br>");
+        result = num1 % num2;
+        document.write(result, "<br>");
+    </script>
+
+</body>
+</html>
